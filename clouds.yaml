@@ -1,0 +1,16 @@
+
+# This is a clouds.yaml file, which can be used by OpenStack tools as a source
+# of configuration on how to connect to a cloud. If this is your only cloud,
+# just put this file in ~/.config/openstack/clouds.yaml and tools like
+# python-openstackclient will just work with no further config.
+# If you have more than one cloud account, add the cloud entry to the clouds
+# section of your existing file and you can refer to them by name with
+# OS_CLOUD=Minh application or --os-cloud=Minh application
+clouds:
+  minh application:
+    auth_type: "v3applicationcredential"
+    auth:
+      auth_url: https://keystone.be-ys.cloud/v3
+      application_credential_id: "f125efbbc61e49f7a7ca4f7c0144f686"
+      application_credential_secret: "TMdRldSRpnCHgiJhfLkh6-QJQI16JMwXVQQwm4cygfO97YA1A1kDzYrH2DeT9dD6_vEStcD1QwfOImArTZW-fg"
+      
